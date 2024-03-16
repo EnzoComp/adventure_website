@@ -1,0 +1,44 @@
+.header-about {
+    position: relative;
+    height: 100vh;
+}
+
+.header-about::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 15rem);
+    background-image: radial-gradient(rgba(255, 255, 255, 0),
+            var(--primary-color)),
+        url(../assets/about_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.about__content2 {
+    padding: 0 1rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.about__content2 h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.section__container2 {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0rem 1rem 5rem;
+}
+
+.text__about p {
+    font-size: 1.3rem;
+}
